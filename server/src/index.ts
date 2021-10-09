@@ -1,6 +1,7 @@
-require('dotenv').config();
-const app = require('./app');
-const db = require('./database');
+import {config} from "dotenv";
+config();
+import app from "./app";
+import db from './database'
 
 app.listen(app.get('port'), async () => {
 	console.log("Server on port:", app.get('port'));
