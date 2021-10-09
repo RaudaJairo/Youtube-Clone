@@ -1,10 +1,11 @@
 {
   "name": "youtube-clone-server",
   "version": "0.1.0",
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
-	"build": "tsc"
+	"build": "tsc",
+	"dev": "ts-node-dev ."
   },
   "dependencies": {
     "dotenv": "^10.0.0",
