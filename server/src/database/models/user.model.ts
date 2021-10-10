@@ -27,6 +27,10 @@ const userModel: (sequelize: Sequelize) => UserModel = (sequelize) =>
         },
         password: {
             type: DataTypes.STRING
+        },
+        verified: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     }, {
         tableName: 'users'

@@ -6,6 +6,7 @@ export interface UserAttributes {
     email: string
     password: string
     username: string
+    verified: boolean
 }
 
 export interface UserCreationAttributes extends Optional<UserAttributes, 'id'> {}
